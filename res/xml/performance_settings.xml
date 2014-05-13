@@ -19,8 +19,8 @@
     android:title="@string/performance_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- PACPerformance -->
-    <PreferenceScreen
+    <!-- Performance Control -->
+        <PreferenceScreen
         android:key="performance_controls"
         android:fragment="com.pac.performance.fragments.MainFragment"
         android:title="@string/performance_settings" />

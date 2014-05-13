@@ -21,7 +21,7 @@
 
     <PreferenceScreen
             android:key="recents_ram_bar"
-            android:fragment="com.android.settings.pac.RamBar"
+            android:fragment="com.android.settings.ioap.RamBar"
             android:title="@string/ram_bar" />
 
     <PreferenceCategory

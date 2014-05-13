@@ -33,7 +33,7 @@
 
         <PreferenceScreen
             android:key="keyguard_style"
-            android:fragment="com.android.settings.pac.LockscreenStyle"
+            android:fragment="com.android.settings.ioap.LockscreenStyle"
             android:title="@string/lockscreen_style_title"/>
 
         <ListPreference

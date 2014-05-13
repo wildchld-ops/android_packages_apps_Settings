@@ -49,7 +49,7 @@
             android:summary="@string/dismiss_all_summary"
             android:dependency="lockscreen_notifications" />
 
-        <com.android.settings.pac.AppMultiSelectListPreference
+        <com.android.settings.ioap.AppMultiSelectListPreference
             android:key="excluded_apps"
             android:persistent="false"
             android:title="@string/excluded_apps_title"
@@ -68,7 +68,7 @@
                 android:defaultValue="30"
                 android:dependency="lockscreen_notifications" />
 
-            <com.android.settings.pac.preference.NumberPickerPreference
+            <com.android.settings.ioap.preference.NumberPickerPreference
                 android:key="notifications_height"
                 android:dialogMessage="@string/notifications_height"
                 android:title="@string/notifications_height"

@@ -232,6 +232,8 @@
                 android:resource="@id/wireless_settings" />
         </activity>
 
+	    <!-- About IOAP -->
+	        <activity android:name=".ioap.About" />
 
         <!-- Top-level settings -->
 
@@ -1826,17 +1828,17 @@
 
         <activity android:name=".chameleonos.labs.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
-        <activity android:name=".pac.RamBar" />
+        <activity android:name=".ioap.RamBar" />
 
         <activity android:name=".aokp.ribbons.RibbonsFragment" />
 
-        <activity android:name=".pac.AppSidebar" />
+        <activity android:name=".ioap.AppSidebar" />
 
-        <activity android:name=".pac.NotificationDrawerStyle" />
+        <activity android:name=".ioap.NotificationDrawerStyle" />
 
-        <activity android:name=".pac.NavRingTargets" />
+        <activity android:name=".ioap.NavRingTargets" />
 
-        <activity android:name=".pac.navbar.NavbarTabHostFragment" />
+        <activity android:name=".ioap.navbar.NavbarTabHostFragment" />
 
         <activity android:name=".slim.themes.ThemeSettings" />
 
@@ -1925,7 +1927,7 @@
         <activity android:name=".crdroid.ActiveDisplaySettings" />
 
         <activity
-            android:name=".pac.Weather"
+            android:name=".ioap.Weather"
             android:label="@string/title_weather" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1933,7 +1935,7 @@
         </activity>
 
         <receiver
-            android:name=".pac.weather.WeatherReceiver"
+            android:name=".ioap.weather.WeatherReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="com.aokp.romcontrol.INTENT_WEATHER_REQUEST" />
@@ -1948,9 +1950,9 @@
 
         <service android:name=".cyanogenmod.BootService"/>
 
-        <service android:name=".pac.weather.WeatherRefreshService" />
+        <service android:name=".ioap.weather.WeatherRefreshService" />
 
-        <service android:name=".pac.weather.WeatherService" />
+        <service android:name=".ioap.weather.WeatherService" />
 
         <service android:name=".chameleonos.labs.identicons.IdenticonCreationService"
                  android:exported="false" />
@@ -1966,7 +1968,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.pac.RamBar" />
+                android:value="com.android.settings.ioap.RamBar" />
         </activity>
 
         <!-- PACPerformance activities -->
@@ -2163,6 +2165,25 @@
             android:exported="false"
             android:name=".cyanogenmod.LtoService">
         </service>
+
+        <activity android:name=".iokp.PlatLogoActivity"
+                android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+                android:process=":ui">
+        </activity>
+        <activity
+            android:name=".iokp.Nyandroid"
+            android:exported="true"
+            android:label="Nyandroid"
+            android:icon="@drawable/nyandroid04"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
 </manifest>

@@ -77,7 +77,6 @@ import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.cyanogenmod.ButtonSettings;
 import com.android.settings.cyanogenmod.LockscreenInterface;
 import com.android.settings.cyanogenmod.MoreDeviceSettings;
 import com.android.settings.cyanogenmod.PerformanceSettings;
@@ -187,7 +186,6 @@ public class Settings extends PreferenceActivity
             R.id.lock_screen_settings,
             R.id.system_settings,
             R.id.privacy_settings_cyanogenmod,
-            R.id.button_settings
     };
 
     private SharedPreferences mDevelopmentPreferences;
@@ -380,7 +378,6 @@ public class Settings extends PreferenceActivity
         HomeSettings.class.getName(),
         LockscreenInterface.class.getName(),
         SystemUiSettings.class.getName(),
-        ButtonSettings.class.getName(),
         MoreDeviceSettings.class.getName(),
         ProfilesSettings.class.getName(),
         PerformanceSettings.class.getName(),

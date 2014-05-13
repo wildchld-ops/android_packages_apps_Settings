@@ -12,8 +12,8 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 
-import com.android.settings.pac.weather.WeatherRefreshService;
-import com.android.settings.pac.weather.WeatherService;
+import com.android.settings.ioap.weather.WeatherRefreshService;
+import com.android.settings.ioap.weather.WeatherService;
 
 import java.io.BufferedWriter;
 import java.io.File;
